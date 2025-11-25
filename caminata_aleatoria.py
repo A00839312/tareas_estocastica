@@ -64,8 +64,8 @@ def guardar_en_excel(caminatas, distancias, tiempos, nombre_archivo="resultados.
 #        STREAMLIT UI
 # -------------------------------
 
-st.title("Simulador de Caminatas Aleatorias 🐾")
-
+st.title("Simulador de Caminatas Aleatorias")
+st.caption("Jose Alejandro Rojas, Luis Eduardo Martínez, Daniel De Pool, Gisel Benítez")
 st.sidebar.header("Parámetros")
 n_pasos = st.sidebar.number_input("Número de pasos", min_value=1, value=100)
 prob = st.sidebar.slider("Probabilidad de disminuir", 0.0, 1.0, 0.5)
