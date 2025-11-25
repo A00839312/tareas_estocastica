@@ -71,11 +71,10 @@ n_pasos = st.sidebar.number_input("Número de pasos", min_value=1, value=100)
 prob = st.sidebar.slider("Probabilidad de disminuir", 0.0, 1.0, 0.5)
 size_paso = st.sidebar.number_input("Tamaño del paso", value=1.0)
 n_caminatas = st.sidebar.number_input("Número de caminatas", min_value=1, value=50)
-n_dimensiones = st.sidebar.number_input("Dimensiones", min_value=1, value=2)
 
 if st.button("Ejecutar simulación"):
     caminatas, tiempos, distancias = caminata_aleatoria(
-        n_pasos, prob, size_paso, n_caminatas, n_dimensiones
+        n_pasos, prob, size_paso, n_caminatas
     )
 
     st.success("Simulación completada 🎉")
